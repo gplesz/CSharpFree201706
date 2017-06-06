@@ -83,20 +83,52 @@ namespace _02Receptek
             //var maVanHalAPiacon = DayOfWeek.Tuesday; //ezt a sort kell használni, ha kedden jön a hal
             var maVanHalAPiacon = DayOfWeek.Friday; //ezt a sort kell használni, ha pénteken.
 
+            AMegfeleloReceptKiiratasa(maiNapNeve, maVanHalAPiacon);
+
+            Console.ReadLine();
+        }
+
+        private static void AMegfeleloReceptKiiratasa(DayOfWeek maiNapNeve, DayOfWeek maVanHalAPiacon)
+        {
             //if (DateTime.Today.DayOfWeek==DayOfWeek.Tuesday) //ezt a sort erre tujuk cserélni:
-            if (maiNapNeve==maVanHalAPiacon)
+            if (maiNapNeve == maVanHalAPiacon)
             { //ha péntek van, akkor ez történik
-                Console.WriteLine("Valamilyen halas étel recept hozzávalók");
+                HalasReceptKiirasa();
             }
             else
             { //minden más esetben pedig ez
-                Console.WriteLine("Marhahús");
-                Console.WriteLine("Vöröshagyma");
-                Console.WriteLine("Olaj");
-                Console.WriteLine("Pirospaprika");
+                PorkoltReceptKiiratasa();
             }
+        }
 
-            Console.ReadLine();
+        /// <summary>
+        /// Halas recept kiíratása a konzolra
+        /// 
+        /// </summary>
+        private static void HalasReceptKiirasa()
+        {
+            Console.WriteLine("Valamilyen halas étel recept hozzávalók");
+        }
+
+
+        /// <summary>
+        /// Egy pörkölt recept kiírását végző függvény
+        /// 
+        /// private (private/internal/public): honnan látható? 
+        ///         (private: csak kódblokk)
+        ///         (public: mindenhonnan)
+        ///         (internal: csak az adott assemblyből (projektből))
+        /// static: mivel static-ból hívjuk, ezért static-nak kell lennie.
+        /// 
+        /// void: nincs visszatérési érték a függvényből
+        /// 
+        /// </summary>
+        private static void PorkoltReceptKiiratasa()
+        {
+            Console.WriteLine("Marhahús");
+            Console.WriteLine("Vöröshagyma");
+            Console.WriteLine("Olaj");
+            Console.WriteLine("Pirospaprika");
         }
     }
 }
