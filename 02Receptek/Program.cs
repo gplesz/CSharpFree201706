@@ -80,9 +80,8 @@ namespace _02Receptek
             var maiNapNeve = maiNap.DayOfWeek;
 
             //melyik napon van hal a piacon:
-            var maVanHalAPiacon = DayOfWeek.Friday;
-
-
+            //var maVanHalAPiacon = DayOfWeek.Tuesday; //ezt a sort kell használni, ha kedden jön a hal
+            var maVanHalAPiacon = DayOfWeek.Friday; //ezt a sort kell használni, ha pénteken.
 
             //if (DateTime.Today.DayOfWeek==DayOfWeek.Tuesday) //ezt a sort erre tujuk cserélni:
             if (maiNapNeve==maVanHalAPiacon)
