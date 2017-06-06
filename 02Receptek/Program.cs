@@ -66,7 +66,26 @@ namespace _02Receptek
             //és az, hogy ez a dátum milyen nap a héten, azt pedig így kapjuk meg:
             //DateTime.Today.DayOfWeek
 
-            if (DateTime.Today.DayOfWeek==DayOfWeek.Tuesday)
+            //Lépésekre bontjuk a bonyolult részt
+            //változó: sárga (radírozható!) cetli (postit)
+            //változó angolul: variable, rövidítve: var
+
+            //létrehozunk egy maiNap nevű cetlit
+            var maiNap = DateTime.Today; //egy lépésben írunk is rá
+                                         //az írás az mindig "jobbról balra" történik
+                                         //vagyis, mindig az egyenlőségjel baloldalán álló
+                                         //"cetli"-re írjuk azt, ami a jobboldalon van.
+
+            //a mai nap az a hétnek melyik napja:
+            var maiNapNeve = maiNap.DayOfWeek;
+
+            //melyik napon van hal a piacon:
+            var maVanHalAPiacon = DayOfWeek.Friday;
+
+
+
+            //if (DateTime.Today.DayOfWeek==DayOfWeek.Tuesday) //ezt a sort erre tujuk cserélni:
+            if (maiNapNeve==maVanHalAPiacon)
             { //ha péntek van, akkor ez történik
                 Console.WriteLine("Valamilyen halas étel recept hozzávalók");
             }
