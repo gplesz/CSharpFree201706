@@ -18,6 +18,25 @@ namespace _01HelloVilag
              * 
              */
 
+            //A C# Case Sensitive nyelv, megkülönbözteti a 
+            //kis és nagybetűket! tehát:
+
+            //ugyanúgy, ahogy nem írunk ilyet: kEdvES mAMa!
+            //a C# -ban is a kis és nagybetű mást jelentenek.
+            //tehát a 
+            //         console 
+            // nem azt jelenti amit a 
+            //         Console
+            //
+
+            //Tehát ilyen sincs:
+            //         console.writeline
+
+            //Királynét megölni nem kell félnetek jó lesz
+            //Királynét megölni nem kell, félnetek jó lesz
+            //Királynét megölni, nem kell félnetek, jó lesz
+
+            //Tehát: minden, ami látszik (nem szóköz és enter) annak fontos jelentése, nem elhagyható
 
             //Ez a sor ugyanaz, mint a lenti!!!
             Console.WriteLine("Hello innen a NetAcademia C# tanfolyamból!");
