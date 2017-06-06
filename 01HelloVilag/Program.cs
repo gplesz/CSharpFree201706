@@ -52,7 +52,7 @@ namespace _01HelloVilag
                 
                 
                 
-                WriteLine(      //Ahol idézőjel nyitűs van, ott is lehet szóköz,
+                WriteLine(      //Ahol idézőjel nyitás van, ott is lehet szóköz,
                 
                                 //és így enter is
                 
